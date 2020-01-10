@@ -2,7 +2,7 @@
 
 *Piping and Redirection*
 1. Create a new file named out1, which contains the calendar for this month. (output redirection, use cal command)
-2. To the same file, append today’s date (using date command).
+2. To the same file, append today’s date (using date command, "Friday 10 January").
 3. Display the contents of this file.
 4. Display the last 3 lines of this file.
 5. Display the lines 3 to 7. (Piping)
