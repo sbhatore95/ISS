@@ -19,4 +19,7 @@ message.
 2. In script 4, suppose there are some folders in your directory as well. Now, write a script such that only files are extended
 to a .try extension.
 3. Print all fibonacci numbers that are <=100.
-4. Sort the numbers passed as command line arguments in ascending order using selection sort. 
+4. Sort the numbers passed as command line arguments in ascending order using selection sort.
+
+### Bonus Question
+1. Display all the files and directories in the current folder whose size is less than 1 MB 
