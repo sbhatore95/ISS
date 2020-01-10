@@ -10,7 +10,7 @@ of all files in try directory with filename.try. For example, file named xyz bec
 
 ## Lab Assignment
 Submission Format: In a folder named `<your_roll_no>_Lab2`, add files q\_1.sh, q\_2.sh, q\_3.sh and q\_4.sh and compress it to 
-`<your_roll_no>_Lab2.tar.gz>`. Upload it on moodle.
+`<your_roll_no>_Lab2.tar.gz`. Upload it on moodle.
 
 Deadline: 10 Jan 2020, 6:55 PM
 
