@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ $# -ne 2 ];
+if [ $# -ne 2 ]
 then
 echo “Command line arguments missing”
 exit
