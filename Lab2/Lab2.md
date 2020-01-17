@@ -12,7 +12,6 @@ grep -A 2 "time" hamlet.txt | tail -2
 5. Remove read, write and execute access from the file “hamlet.txt” for group and others using 2 different ways. (symbolic and octal)
 ```bash
 chmod go-rwx hamlet.txt
-chmod 
 ```
 Octal one is left as an exercise.
 6. Allow everyone to read, write but not execute the same file (hamlet.txt), using a single command. This is left as an exercise.
