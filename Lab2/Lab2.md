@@ -5,13 +5,22 @@
 ```bash
 grep -c "the" "hamlet.txt"
 ``` 
-2. In the same file, display all the lines in which the word “to” occurs (not as a part of any other word). (Words like 3. “today” should not be present in your output).
 4. Display 2 lines below the word “time”.
+```bash
+grep -A 2 "time" hamlet.txt | tail -2
+```
 5. Remove read, write and execute access from the file “hamlet.txt” for group and others using 2 different ways. (symbolic and octal)
-6. Allow everyone to read, write but not execute the same file (hamlet.txt), using a single command
+```bash
+chmod go-rwx hamlet.txt
+chmod 
+```
+Octal one is left as an exercise.
+6. Allow everyone to read, write but not execute the same file (hamlet.txt), using a single command. This is left as an exercise.
 7. View all the groups that the current user account is attached to.
-8. Change the group owner of the file “hamlet.txt”. (chown)
-9. List all the files from your home directory for which group has write permissions. (Hint: piping, grep)
+```bash
+groups
+```
+8. Change the group owner of the file “hamlet.txt” (chgrp). This is also left as an exercise
 
 Bash scripts have a .sh extension. After editing a script in an editor, run `chmod +x <script_name>.sh` to give the required
 permissions.
