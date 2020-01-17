@@ -1,7 +1,10 @@
 # Lab 2: Shell Scripting
 *File permissions, patterns in a file*
 
-1. Consider the file “hamlet.txt”. Display all occurrences (case sensitive) of the word “the” in the file. 
+1. Consider the file “hamlet.txt”. Write a command to print the number of occurrences (case sensitive) of the word “the” in the file.
+```bash
+grep -c "the" "hamlet.txt"
+``` 
 2. In the same file, display all the lines in which the word “to” occurs (not as a part of any other word). (Words like 3. “today” should not be present in your output).
 4. Display 2 lines below the word “time”.
 5. Remove read, write and execute access from the file “hamlet.txt” for group and others using 2 different ways. (symbolic and octal)
