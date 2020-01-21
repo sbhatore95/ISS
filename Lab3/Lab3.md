@@ -78,6 +78,9 @@ Basics
 - == vs ===
 - Functions (basic)
 
+Links for Practice:
+1. [https://www.codecademy.com/learn/introduction-to-javascript]
+
 ## DOM
 - DOM tree
 - Window and document objects
