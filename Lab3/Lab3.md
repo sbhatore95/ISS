@@ -1,5 +1,5 @@
-#Lab3
-##Sed
+# Lab3
+## Sed
 
 Sed is a stream editor that lets you edit a file without opening it in an editor like vim, emacs or
 sublime. Editing takes place through the command line or from within a script.
@@ -16,14 +16,14 @@ unchanged.
 Useful fact: Multiple sed commands can be written in a text file and can be given as an
 argument to sed. Google how to do this !!
 
-##Awk
+## Awk
 
 Awk is a scripting language for text processing, and is much more powerful than sed. It allows
 us to define variables, use arithmetic and string operators, use control flow, and generate
 reports.
 Here’s a good tutorial to learn its usage: [https://likegeeks.com/awk-command/]
 
-##HTML and CSS
+## HTML and CSS
 Here’s a good resource: [https://www.w3schools.com/html/]
 An HTML file will contain the content of your website, and your CSS sheet — which stands for
 Cascading Style Sheet — will style the content of your HTML file.
@@ -57,7 +57,7 @@ See what's inside index.html in the files folder and open it in browser. Try edi
 Here’s a list of tags
 [https://www.w3schools.com/tags/ref_byfunc.asp]
 
-##JavaScript
+## JavaScript
 
 JavaScript is a programming language that adds interactivity to your website (for example
 games, responses when buttons are pressed or data is entered in forms, dynamic styling,
@@ -78,7 +78,7 @@ Basics
 - == vs ===
 - Functions (basic)
 
-##DOM
+## DOM
 - DOM tree
 - Window and document objects
 - getElementbyId, getElementbyClassName, getElementbyTagName, createElement,
