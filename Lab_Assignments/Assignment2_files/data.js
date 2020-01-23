@@ -1,4 +1,4 @@
-module.exports = {
+var jsonObject = {
     "Aylin": [
         97,
         96,
