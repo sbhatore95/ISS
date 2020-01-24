@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	function counter(){
+    	var cText = document.getElementById("demo");
+        var count = parseInt(cText.innerHTML);
+        count = count + 1;
+        document.getElementById("demo").innerHTML = count;
+    }
+</script>
+</head>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">1</p>
+
+<button type="button" onclick="counter()">Click Me!</button>
+
+</body>
+</html>
+
