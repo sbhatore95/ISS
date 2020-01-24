@@ -81,6 +81,10 @@ Basics
 Links for Practice:
 1. [https://www.codecademy.com/learn/introduction-to-javascript]
 
+References:
+1. https://developers.google.com/apps-script/guides/html/best-practices
+2. https://google.github.io/styleguide/jsguide.html
+
 ## DOM
 - DOM tree
 - Window and document objects
