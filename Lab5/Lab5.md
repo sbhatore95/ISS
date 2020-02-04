@@ -100,8 +100,212 @@ f.write("Hey !!")
 f.close()
 ```
 
-Exercise:
+***Exercise:***
 
 Write inside a file with your name on the first line and roll number on the second. Then
 read inside the file to check if the name is palindrome or not. Do the same with the
 roll number.
+
+## OOPS
+
+Resource link: 
+1. [https://www.geeksforgeeks.org/object-oriented-programming-in-python-set-1-class-and-its-members/]
+2. [https://www.programiz.com/python-programming/object-oriented-programming]
+
+### Class and instance variable
+
+Class example:
+
+```python
+class Test: 
+	def foo(self): 
+		print("Hello") 
+
+# Driver code 
+obj = Test() 
+obj.fun() 
+```
+
+The __init__ method:
+
+```python
+class Karizma: 
+
+	# init method or constructor 
+	def __init__(self, model): 
+		self.model = model 
+
+	# Sample Method 
+	def printModelName(self): 
+		print(self.model) 
+
+p = Karizma('ZMR') 
+p.printModelName() 
+```
+
+Instance and class variable
+
+```python
+# Class for Computer Science Student 
+class CSStudent: 
+
+	# Class Variable 
+	stream = 'cse'			
+
+	# The init method or constructor 
+	def __init__(self, roll): 
+	
+		# Instance Variable	 
+		self.roll = roll	 
+
+# Objects of CSStudent class 
+a = CSStudent(101) 
+b = CSStudent(102) 
+
+print(a.stream) # prints "cse" 
+print(b.stream) # prints "cse" 
+print(a.roll) # prints 101 
+
+# Class variables can be accessed using class 
+# name also 
+print(CSStudent.stream) # prints "cse"	 
+```
+
+An example:
+
+```python
+class Parrot:
+
+    # class attribute
+    species = "bird"
+
+    # instance attribute
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+# instantiate the Parrot class
+blu = Parrot("Blu", 10)
+woo = Parrot("Woo", 15)
+
+# access the class attributes
+print("Blu is a {}".format(blu.__class__.species))
+print("Woo is also a {}".format(woo.__class__.species))
+
+# access the instance attributes
+print("{} is {} years old".format( blu.name, blu.age))
+print("{} is {} years old".format( woo.name, woo.age))
+```
+
+### Inheritance
+
+Inheritance is a way of creating new class for using details of existing class without
+modifying it. The newly formed class is a derived class (or child class). Similarly, the 
+existing class is a base class (or parent class).
+
+```python
+# parent class
+class Bird:
+    
+    def __init__(self):
+        print("Bird is ready")
+
+    def whoisThis(self):
+        print("Bird")
+
+    def swim(self):
+        print("Swim faster")
+
+# child class
+class Penguin(Bird):
+
+    def __init__(self):
+        # call super() function
+        super().__init__()
+        print("Penguin is ready")
+
+    def whoisThis(self):
+        print("Penguin")
+
+    def run(self):
+        print("Run faster")
+
+peggy = Penguin()
+peggy.whoisThis()
+peggy.swim()
+peggy.run()
+```
+
+```
+Bird is ready
+Penguin is ready
+Penguin
+Swim faster
+Run faster
+```
+
+### Encapsulation
+
+Using OOP in Python, we can restrict access to methods and variables. This prevent data
+from direct modification which is called encapsulation. In Python, we denote private attribute
+using underscore as prefix i.e single “ _ “ or double “ __“.
+
+```python
+class Computer:
+
+    def __init__(self):
+        self.__maxprice = 900
+
+    def sell(self):
+        print("Selling Price: {}".format(self.__maxprice))
+
+    def setMaxPrice(self, price):
+        self.__maxprice = price
+
+c = Computer()
+c.sell()
+
+# change the price
+c.__maxprice = 1000
+c.sell()
+
+# using setter function
+c.setMaxPrice(1000)
+c.sell()
+```
+
+### Polymorphism
+
+Polymorphism is an ability (in OOP) to use common interface for multiple form (data types).
+
+Suppose, we need to color a shape, there are multiple shape option (rectangle, square, circle). However we could use same method to color any shape. This concept is called Polymorphism.
+
+```python
+class Parrot:
+
+    def fly(self):
+        print("Parrot can fly")
+    
+    def swim(self):
+        print("Parrot can't swim")
+
+class Penguin:
+
+    def fly(self):
+        print("Penguin can't fly")
+    
+    def swim(self):
+        print("Penguin can swim")
+
+# common interface
+def flying_test(bird):
+    bird.fly()
+
+#instantiate objects
+blu = Parrot()
+peggy = Penguin()
+
+# passing the object
+flying_test(blu)
+flying_test(peggy)
+```
