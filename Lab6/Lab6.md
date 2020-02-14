@@ -33,3 +33,5 @@
 
 2. Create an endpoint to get all the books data in json array format as shown below,
 	- [{'name':'book1','Author':'Author1','Genre':'Genre1','Pages':'Pages'},.....]	
+	
+	Endpoint for this should be '/getBooks'
