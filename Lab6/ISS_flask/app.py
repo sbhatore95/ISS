@@ -20,8 +20,8 @@ class Student(db.Model):
 def root():
 	return "Hello"
 
-@app.route('/students/create', methods = ['GET', 'POST'])
-def create():
+@app.route('/addStudent', methods = ['GET', 'POST'])
+def add():
 	if request.form:
 		form = request.form
 		s = Student(name = form['name'], rollnumber = form['rollnumber'], email = form['email'])
@@ -30,18 +30,29 @@ def create():
 		return redirect(url_for('getStudents'))
 	return render_template('home.html')
 
-@app.route('/students', methods = ['GET'])
+@app.route('/getStudents', methods = ['GET'])
 def getStudents():
 	students = Student.query.all()
-	data = []
-	for s in students:
-		obj = {
+	return render_template('students.html', data = students)
+	# data = []
+	# for s in students:
+	# 	obj = {
+	# 		"username" : s.name,
+	# 		"rollnumber" : s.rollnumber,
+	# 		"email" : s.email
+	# 	}
+	# 	data.append(obj)	
+	# return str(data)
+
+@app.route('/getStudent')
+def getOneStudent():
+	name = request.args.get('name')
+	s = Student.query.filter_by(name=name).first()
+	obj = {
 			"username" : s.name,
 			"rollnumber" : s.rollnumber,
 			"email" : s.email
-		}
-		data.append(obj)	
-	return str(data)
-
+	}
+	return str(obj)
 if __name__ == '__main__':
 	app.run(debug = True)
